@@ -1,0 +1,148 @@
+<!--
+
+A* Javascript Implementation
+Written By: Andrew Huynh, Dec. 2006;
+
+-->
+
+<html>
+<script type="text/javascript" src="astarAlg.js"></script>
+<script type="text/javascript">
+var map 		= new Array(100);
+var info 		= null;
+var benchMark 	= null;
+var showDiv 	= null;
+var pathFinder = new Astar();
+
+function init() {
+	info = document.getElementById('info');
+	document.onclick = onClick;
+	showDiv = document.getElementById('fNum');
+	randomize();
+}
+
+function onClick(event) {
+	if(!event) event = window.event;
+
+	var tObj = (event.srcElement ? event.srcElement : event.target);
+
+	if(tObj.id.indexOf('x') != -1) {
+		var pos = tObj.id.split('x');
+
+		var tileNum = pos[1]*10 - (-pos[0]);
+
+		map[tileNum] = (map[tileNum] == 0 ? 1 : 0);
+
+		tObj.className = "square" + map[tileNum];
+	}
+}
+
+function randomize() {
+	info.innerHTML = "";
+
+	for(var i = 0; i < map.length; i++)
+		map[i] = 0;
+
+	for(var i = 0; i < 20; i++)	{
+		var num = 0;
+		do { num = Math.floor((Math.random()*100)); }
+		while(num == 0 || num == 99);
+		map[num] = 1;
+	}
+
+	drawMap();
+}
+
+function drawMap() {
+	var mapStr = new Array();
+
+	for(var y = 0; y < 10; y++) {
+		for(var x = 0; x < 10; x++) {
+			var id = x + "x" + y;
+			mapStr.push("<div id='"+id+"' onmouseover='show(this)' class='square"+map[y*10 + x]+"' style='top: "+(y*20)+"px; left: "+(x*20)+"px'></div>");
+		}
+	}
+
+	document.getElementById('map').innerHTML = mapStr.join('');
+}
+
+var path = null;
+var i = 0;
+function findPath() {
+
+	// Benchmarker
+	benchMark = new Date();
+
+	// From one corner to the next.
+	path = pathFinder.findPath(0, 0, 9, 9);
+	i = 0;
+
+	benchMark = (new Date()).getTime() - benchMark.getTime();
+
+	if(path == null) {
+		info.innerHTML = "<b>No Path Found</b>";
+		return;
+	}
+
+	window.setTimeout(togglePath, 50);
+}
+
+function togglePath() {
+	if(i < path.length) {
+		var tmpNode = path[i];
+		var obj = document.getElementById(tmpNode.x + "x" + tmpNode.y)
+		obj.style.backgroundColor = "#0F0";
+		obj.innerHTML = tmpNode.f;
+		i++;
+		window.setTimeout(togglePath, 50);
+	}
+}
+
+
+function show(obj) {
+	if(obj.innerHTML != null && obj.innerHTML != '') {
+		var pos = obj.id.split('x');
+		showDiv.innerHTML = obj.id + ": " + obj.innerHTML;
+	}
+	else {
+
+		if(benchMark == null)
+			showDiv.innerHTML = "Find path hasn't been run";
+		else
+			showDiv.innerHTML = "Benchmark: " + benchMark + "ms";
+	}
+}
+
+</script>
+<style>
+.square0{ z-index: 2; position: absolute; width: 20px; height: 20px; border-style: solid; border-color: #CCC; border-width: 1px; overflow: hidden; cursor: default;}
+.square1{ z-index: 2; position: absolute; width: 20px; height: 20px; border-style: solid; border-color: #CCC; background: #F00; border-width: 1px; overflow: hidden; cursor: default;}
+
+</style>
+<body onload='init()'>
+<div id='map' style="position: absolute; width: 400px; height: 400px;" ></div>
+<div style='position: absolute; top: 220px; font-family: tahoma; font-size: 10pt' >
+<div id='fNum'>&nbsp;</div>
+<input type='button' value='Randomize/Reset' onclick='randomize()'>
+<input type='button' value='Path Find' onclick='findPath()'>
+<input type='button' value='Show Nodes Accessed' onclick='pathFinder.showNodes()'>
+<p>
+Click on grid to toggle obstacles on/off. (Red tiles are obstacles).
+<p><font style="font-weight: bold">Change Log</font>
+<pre style="font-family: tahoma; font-size: 10pt">
+Jan. 20, 2007 - v.03
+- Fixed several bugs, as well as complete A* implementation
+
+Dec. 21, 2006 - v.02
+- Revamped code, should find a path 99% of the time, if there is a path to begin with.
+- Closer to the A* algorithm than last release.
+
+Dec. 20, 2006 - Initial Release (v.01)
+- A semi-A* implementation in javascript, rather buggy.
+</pre>
+Javascript Code written by Andrew Huynh
+</div>
+<div id='info' style='overflow: auto; font-family: Tahoma; font-size: 10pt; position: absolute; left: 300px; width: 400px; height: 200px; border-style: solid; border-color: #CCC; border-width: 1px;'>
+</div>
+</body>
+</html>

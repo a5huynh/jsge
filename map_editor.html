@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	    <title>JSGE: Map Editor</title>
+	    
+        <link rel='stylesheet' href='css/game-style.css' type='text/css'>
+        <link rel='stylesheet' href='css/game-sprites.css' type='text/css'>
+        
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js'></script>
+        
+        <script type='text/javascript' src='js/config.js'></script>
+        <script type='text/javascript' src='js/helper.js'></script>
+        <script type='text/javascript' src='js/events.js'></script>
+        
+        <!-- game objects -->
+        <script type='text/javascript' src='js/objs/npc.js'></script>
+        <script type='text/javascript' src='js/objs/player.js'></script>        
+        
+        <!-- ui elements -->
+        <script type='text/javascript' src='js/core/game-draw.js'></script>
+        <script type='text/javascript' src='js/ui/hud.js'></script>
+        <script type='text/javascript' src='js/ui/console.js'></script>        
+        <script type='text/javascript' src='js/ui/tooltip.js'></script>
+        <script type='text/javascript' src='js/ui/pack.js'></script>
+        <script type='text/javascript' src='js/ui/context-menu.js'></script>
+        
+        <!-- engine elements -->
+        <script type='text/javascript' src='js/core/chat.js'></script>        
+        <script type='text/javascript' src='js/core/game-input.js'></script>        
+        <script type='text/javascript' src='js/core/script-engine.js'></script>
+        <script type='text/javascript' src='js/core/game-engine.js'></script>    
+
+        <!-- startup code -->
+        <script type='text/javascript' src='js/game-startup.js'></script>    
+    
+        <script type='text/javascript'>
+            $(function(){
+                
+                var mapDIV = $('#map');
+                var section_size = document.jsge.MAP_SIZE * document.jsge.SPRITE_SIZE;
+                
+                /* Generate map sections */
+                var sec_num = 1;
+                for(var y = 0; y < 3; y++) {
+                    for(var x = 0; x < 3; x++) {
+                        
+                        var div = document.createElement('DIV');
+                        div.id = 'map' + sec_num;
+                        div.style.position = 'absolute';
+                        div.style.top = (y*section_size) + 'px';
+                        div.style.left = (x*section_size) + 'px';
+                        div.style.width = section_size + 'px';
+                        div.style.height = section_size + 'px';
+                        mapDIV.append(div);                        
+                        sec_num++;
+                    }
+                }
+
+				loadMapEditor();
+				
+				$('.sprite-palette').hover(function(){
+					$(this).css('border-color', '#1691d8');
+				}, function() {
+					$(this).css('border-color', '#FFFFFF');
+				});
+            });
+        </script>
+		<style type='text/css'>
+			.sprite-palette {
+				float:left;
+				width:24px;
+				height:24px;
+				margin-right:8px;
+				border:2px solid #FFF;
+			}
+		</style>
+	</head>
+    <body>
+        <!-- Status -->
+        <div id='status' class='status'></div>
+        
+        <table style='width:1122px;padding: 0; margin: 0 auto;' cellpadding=0 border=0 cellspacing=0>
+        <tr>
+		<td style='border: 5px solid #000; width: 250px; vertical-align: top;'>
+            <div style='width:100%;'>
+				<div style='padding:16px;height:550px;'>
+					<div style='font-size:20px;border-bottom:2px solid #DDD;padding-bottom:4px;'>
+						<div style='float:right;'>
+							<select>
+								<option>Terrain</option>
+								<option>Objects</option>
+								<option>NPCs</option>
+								<option>Misc</option>
+							</select>
+						</div>
+						<div>Sprites</div>
+					</div>
+					<div style='margin-top:4px;'>
+						<div class='sprite-palette'>
+							<div class='sp1 sprite'></div>
+						</div>
+						<div class='sprite-palette'>
+							<div class='sp2 sprite'></div>
+						</div>
+						<div class='sprite-palette'>
+							<div class='sp5 sprite'></div>
+						</div>
+					</div>
+				</div>
+				<div style='padding:16px;'>
+					<div style='font-size:20px;border-bottom:2px solid #DDD;padding-bottom:4px;'>
+						<div>Current Brush</div>
+					</div>
+					<div style='margin-top:4px;'>
+						<div class='sprite-palette'>
+							<div class='sp1 sprite'></div>
+						</div>
+						<div style='float:left;margin-top:5px;'>
+							Grass
+						</div>
+					</div>
+				</div>
+			</div>
+		</td><td>
+            <!-- Game Map -->
+            <div id='scroll'>
+                <div id='players' style='position: absolute; z-index: 5;'></div>
+                <div id='map' style="position: absolute;"></div>
+            </div>
+                
+            <!-- Console/Chat Window -->
+            <div id="console" class="console"></div>
+            <div id="cInputDiv" class="cInputDiv">
+                <input type="text" id="consoleInput" class="consoleInput" maxlength="60" disabled>
+            </div>                    
+        </td><td style='border: 5px solid #000; width: 250px; vertical-align: top;'>
+            <div style='width:100%;'>
+				<div style='padding:16px;'>
+					<div style='font-size:20px;border-bottom:2px solid #DDD;padding-bottom:4px;'>
+						<div>Inspector</div>
+					</div>
+					<div id='tile-info' style='margin-top:4px;background:#FFF;'>
+					</div>
+				</div>
+            </div>                        
+        </td></tr></table>
+        
+        <!-- Tooltip -->
+        <div id='ttip' class='ttip'>
+            <div id='ttHeader' class='ttHeader'></div>
+            <div id='ttInfo' class='ttInfo'></div>
+    	</div>
+
+        <!-- Script Storage (Storage area for scripts.) -->
+        <div id='scriptStorage' style='display: none;'></div>
+
+        <!-- Context Menu -->
+    	<div id='ctxtMenu' class='ctxtMenu'>
+    		<div class='ctxtHeader'>Options</div>
+    		<div class='ctxtDivider'></div>
+    		<div id='ctxtOptions'></div>
+    	</div>        
+    </body>
+</html>

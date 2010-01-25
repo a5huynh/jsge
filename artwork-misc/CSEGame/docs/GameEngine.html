@@ -1,0 +1,718 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GameEngine
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="GameEngine";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameEngine.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="GameDraw.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="GameInput.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class GameEngine</H2>
+<PRE>Object
+   |
+   +--<b>GameEngine</b>
+</PRE>
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>GameEngine</B>
+   
+
+</DL>
+   
+   <P>
+   <BR/>The main class that delegates specific game functions to other classes
+ provides an interface in which to easily interact with other Core classes.
+ <BR/><I>Defined in <a href='overview-summary-cseGameEngine.js.html'>cseGameEngine.js</a></I><BR/><BR/><B>Author:</B> Andrew Huynh<BR/>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{GameDraw}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#gameDraw">gameDraw</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public access to GameDraw object</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{GameInput}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#gameInput">gameInput</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public access to GameInput object</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{Player}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#player">player</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public access to Player object</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{ScriptEngine}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#sEngine">sEngine</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public access to ScriptEngine object</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{long}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#thread">thread</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animation thread ID</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="#GameEngine()">GameEngine</A></B>()
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Create a new GameEngine object.
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#Initialize">Initialize</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Initialize GameDraw, GameInput, and ScriptEngine.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#loadMap">loadMap</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Loads map.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#loadNPC">loadNPC</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Loads NPC for map(s).
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#loadPlayer">loadPlayer</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Places player in the correct position (the middle of screen) and makes player's avatar visible.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#move">move</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Does the calculations involved in player movement
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#regAnimation">regAnimation</A></B>(&lt;Object&gt; obj)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Register an object with the GameEngine for animation.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;&lt;private&gt; &nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#run">run</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Called every 200ms.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#start">start</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Starts the animation/update thread.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#stopThread">stopThread</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Stops the GameEngine animation/update thread.
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="gameDraw"><!-- --></A>
+   <H3>gameDraw</H3>
+   <PRE>{GameDraw}&nbsp;<B>gameDraw</B></PRE>
+   <UL>
+   Public access to GameDraw object
+   
+   </UL>
+   <HR>
+   
+   <A NAME="gameInput"><!-- --></A>
+   <H3>gameInput</H3>
+   <PRE>{GameInput}&nbsp;<B>gameInput</B></PRE>
+   <UL>
+   Public access to GameInput object
+   
+   </UL>
+   <HR>
+   
+   <A NAME="player"><!-- --></A>
+   <H3>player</H3>
+   <PRE>{Player}&nbsp;<B>player</B></PRE>
+   <UL>
+   Public access to Player object
+   
+   </UL>
+   <HR>
+   
+   <A NAME="sEngine"><!-- --></A>
+   <H3>sEngine</H3>
+   <PRE>{ScriptEngine}&nbsp;<B>sEngine</B></PRE>
+   <UL>
+   Public access to ScriptEngine object
+   
+   </UL>
+   <HR>
+   
+   <A NAME="thread"><!-- --></A>
+   <H3>thread</H3>
+   <PRE>&lt;private&gt;&nbsp;{long}&nbsp;<B>thread</B></PRE>
+   <UL>
+   Animation thread ID
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="GameEngine()"><!-- --></A><H3>
+GameEngine</H3>
+<PRE><B>GameEngine</B>()</PRE>
+
+
+<UL>
+   Create a new GameEngine object. Call Initialize to prepare the GameEngine
+  for it's tasks. Calling the start() function will power up the GameEngine and
+  allow it to start animation, updating, etc.
+</UL>
+
+
+
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>Author:</B> Andrew Huynh<BR/>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="Initialize"><!-- --></A>
+   <H3>Initialize</H3>
+   <PRE>void <B>Initialize</B>()</PRE>
+   
+      <UL>Initialize GameDraw, GameInput, and ScriptEngine.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="loadMap"><!-- --></A>
+   <H3>loadMap</H3>
+   <PRE>void <B>loadMap</B>()</PRE>
+   
+      <UL>Loads map. Requests list of maps to load (in order),
+ calls on GameDraw to load the map correctly (registers animation, 
+ add objects, etc) and also prepares the Player object.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="loadNPC"><!-- --></A>
+   <H3>loadNPC</H3>
+   <PRE>void <B>loadNPC</B>()</PRE>
+   
+      <UL>Loads NPC for map(s).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="loadPlayer"><!-- --></A>
+   <H3>loadPlayer</H3>
+   <PRE>void <B>loadPlayer</B>()</PRE>
+   
+      <UL>Places player in the correct position (the middle of screen) and makes player's avatar visible.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="move"><!-- --></A>
+   <H3>move</H3>
+   <PRE>&nbsp;&lt;private&gt; void <B>move</B>()</PRE>
+   
+      <UL>Does the calculations involved in player movement</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="regAnimation"><!-- --></A>
+   <H3>regAnimation</H3>
+   <PRE>void <B>regAnimation</B>(&lt;Object&gt; obj)</PRE>
+   
+      <UL>Register an object with the GameEngine for animation.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>obj</CODE> -  Object to be registered for animation.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="run"><!-- --></A>
+   <H3>run</H3>
+   <PRE>&nbsp;&lt;private&gt; void <B>run</B>()</PRE>
+   
+      <UL>Called every 200ms. Animates registered objects that are viewable by the 
+ player. Also handles updates and such.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="start"><!-- --></A>
+   <H3>start</H3>
+   <PRE>void <B>start</B>()</PRE>
+   
+      <UL>Starts the animation/update thread.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="stopThread"><!-- --></A>
+   <H3>stopThread</H3>
+   <PRE>void <B>stopThread</B>()</PRE>
+   
+      <UL>Stops the GameEngine animation/update thread.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameEngine.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="GameDraw.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="GameInput.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+&copy Copyright 2007. CSES
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Feb  9 13:00:52 2007</div>
+</BODY>
+</HTML>

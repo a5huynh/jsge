@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+ContextMenu
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="ContextMenu";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameDraw.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="Console.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="Date.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class ContextMenu</H2>
+<PRE>Object
+   |
+   +--<b>ContextMenu</b>
+</PRE>
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>ContextMenu</B>
+   
+
+</DL>
+   
+   <P>
+   <BR/>Handles the display of the context menu. Determines type of 
+  menu to display depending on the object clicked.
+ <BR/><I>Defined in <a href='overview-summary-cseGameDraw.js.html'>cseGameDraw.js</a></I><BR/><BR/><B>Author:</B> Andrew Huynh  <BR/>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ctxtMenu">ctxtMenu</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Holds the context menu</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ctxtObj">ctxtObj</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Holds entire context menu</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#ctxtOptions">ctxtOptions</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Holds menu options</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{bool}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#isVisible">isVisible</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether the context menu is visible</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#scriptStorage">scriptStorage</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Storage area for scripts</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="#ContextMenu()">ContextMenu</A></B>()
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Create new ContextMenu object.
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#exec">exec</A></B>(&lt;int&gt; objNum)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Calls on the script engine to execute some script.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#hide">hide</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Hide the context menu and re-enable tooltips.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#Initialize">Initialize</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Initialize the context menu.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#show">show</A></B>(obj, event)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Shows the context menu.
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="ctxtMenu"><!-- --></A>
+   <H3>ctxtMenu</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>ctxtMenu</B></PRE>
+   <UL>
+   Holds the context menu
+   
+   </UL>
+   <HR>
+   
+   <A NAME="ctxtObj"><!-- --></A>
+   <H3>ctxtObj</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>ctxtObj</B></PRE>
+   <UL>
+   Holds entire context menu
+   
+   </UL>
+   <HR>
+   
+   <A NAME="ctxtOptions"><!-- --></A>
+   <H3>ctxtOptions</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>ctxtOptions</B></PRE>
+   <UL>
+   Holds menu options
+   
+   </UL>
+   <HR>
+   
+   <A NAME="isVisible"><!-- --></A>
+   <H3>isVisible</H3>
+   <PRE>&lt;private&gt;&nbsp;{bool}&nbsp;<B>isVisible</B></PRE>
+   <UL>
+   Whether the context menu is visible
+   
+   </UL>
+   <HR>
+   
+   <A NAME="scriptStorage"><!-- --></A>
+   <H3>scriptStorage</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>scriptStorage</B></PRE>
+   <UL>
+   Storage area for scripts
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="ContextMenu()"><!-- --></A><H3>
+ContextMenu</H3>
+<PRE><B>ContextMenu</B>()</PRE>
+
+
+<UL>
+   Create new ContextMenu object.
+</UL>
+
+
+
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>Author:</B> Andrew Huynh  <BR/>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="exec"><!-- --></A>
+   <H3>exec</H3>
+   <PRE>void <B>exec</B>(&lt;int&gt; objNum)</PRE>
+   
+      <UL>Calls on the script engine to execute some script.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>objNum</CODE> -  Menu item selected(which contains the script to execute).    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="hide"><!-- --></A>
+   <H3>hide</H3>
+   <PRE>void <B>hide</B>()</PRE>
+   
+      <UL>Hide the context menu and re-enable tooltips.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="Initialize"><!-- --></A>
+   <H3>Initialize</H3>
+   <PRE>void <B>Initialize</B>()</PRE>
+   
+      <UL>Initialize the context menu. Grabs the divs necessary to make it work.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="show"><!-- --></A>
+   <H3>show</H3>
+   <PRE>void <B>show</B>(obj, event)</PRE>
+   
+      <UL>Shows the context menu. Items in the context menu
+ are determined by what object is clicked.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameDraw.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="Console.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="Date.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+&copy Copyright 2007. CSES
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Feb  9 13:00:52 2007</div>
+</BODY>
+</HTML>

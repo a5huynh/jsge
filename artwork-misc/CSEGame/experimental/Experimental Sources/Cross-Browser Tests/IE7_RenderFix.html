@@ -1,0 +1,42 @@
+<!--//=========================================================================
+// Status: Fixed
+//
+// IE 7 Character Render Bug
+// Description: Player's character is not drawn for some reason in IE 7 before
+//	this fix was applied.
+//
+// -- Fix Compatability --
+// Firefox 2.0: Yes
+// IE 7:		Yes
+// Opera 9:		Yes.
+//==========================================================================-->
+
+
+<html>
+<style>
+	.test { background-image: url('test4.png'); width: 144px; height: 26px; position: absolute;
+		top: 0px; left: 0px;
+	}
+
+	.mapSquare { z-index: 1; position: absolute; background-image: url('terrain.png'); width: 100px;
+		height: 100px; top: 0px; left: 0px;}
+</style>
+<body>
+
+<div id='map' style='position: absolute; top: 0px; left: 0px; width: 100px; height: 100px;'>
+
+		   <!-- Put z-index: 5 in 'players' div not the one embedded in it.
+		   	    Otherwise IE 7 won't render player's character. Firefox is fine both ways.
+		   -->
+	<div id='players' style='z-index: 5; position: absolute'>
+		<div style='position: absolute; overflow: hidden; width: 18px; height: 26px;'>
+			<div class='test'></div>
+		</div>
+	</div>
+	<div style='width: 100px; height: 100px; position: absolute; top: 0px; left: 0px;'>
+		<div class='mapSquare'></div>
+	</div>
+</div>
+
+</body>
+</html>

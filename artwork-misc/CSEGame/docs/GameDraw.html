@@ -1,0 +1,613 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GameDraw
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="GameDraw";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameDraw.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="EventHandler.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="GameEngine.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class GameDraw</H2>
+<PRE>Object
+   |
+   +--<b>GameDraw</b>
+</PRE>
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>GameDraw</B>
+   
+
+</DL>
+   
+   <P>
+   <BR/>Handles the 'rendering' of maps, game objects, npcs, etc. Jobs are handed 
+ off to respective classes (i.e Pack, ContextMenu)
+ <BR/><I>Defined in <a href='overview-summary-cseGameDraw.js.html'>cseGameDraw.js</a></I><BR/><BR/><B>Author:</B> Andrew Huynh  <BR/>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{Array}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#mapCache">mapCache</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array of already loaded maps</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#mapScroll">mapScroll</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Map scroll DIV element</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{Array}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#mapSections">mapSections</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array of map sections</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{Array}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#objCache">objCache</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array of already loaded objects</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;{DOMElement}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#status">status</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIV element that holds game status messages</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="#GameDraw()">GameDraw</A></B>()
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Create a new GameDraw object.
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#hasCollision">hasCollision</A></B>(&lt;int&gt; cx, &lt;int&gt; cy)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Determines whether or not a collision occurs at [cx,cy].
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#Initialize">Initialize</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Initialize GUI classes, prepares for 'rendering'.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#loadMap">loadMap</A></B>(&lt;<a href="String.html">String</a>&gt; map)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Takes the file name of the top-left corner map and proceeds to
+ load every other section of the map depending from information 
+ gathered from the first map.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#scrollMap">scrollMap</A></B>(&lt;int&gt; cx, cy)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Centers map on [cx, cy].
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setStatus">setStatus</A></B>(&lt;<a href="String.html">String</a>&gt; msg)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Sets the status msg to [msg].
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="mapCache"><!-- --></A>
+   <H3>mapCache</H3>
+   <PRE>&lt;private&gt;&nbsp;{Array}&nbsp;<B>mapCache</B></PRE>
+   <UL>
+   Array of already loaded maps
+   
+   </UL>
+   <HR>
+   
+   <A NAME="mapScroll"><!-- --></A>
+   <H3>mapScroll</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>mapScroll</B></PRE>
+   <UL>
+   Map scroll DIV element
+   
+   </UL>
+   <HR>
+   
+   <A NAME="mapSections"><!-- --></A>
+   <H3>mapSections</H3>
+   <PRE>&lt;private&gt;&nbsp;{Array}&nbsp;<B>mapSections</B></PRE>
+   <UL>
+   Array of map sections
+   
+   </UL>
+   <HR>
+   
+   <A NAME="objCache"><!-- --></A>
+   <H3>objCache</H3>
+   <PRE>&lt;private&gt;&nbsp;{Array}&nbsp;<B>objCache</B></PRE>
+   <UL>
+   Array of already loaded objects
+   
+   </UL>
+   <HR>
+   
+   <A NAME="status"><!-- --></A>
+   <H3>status</H3>
+   <PRE>&lt;private&gt;&nbsp;{DOMElement}&nbsp;<B>status</B></PRE>
+   <UL>
+   DIV element that holds game status messages
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="GameDraw()"><!-- --></A><H3>
+GameDraw</H3>
+<PRE><B>GameDraw</B>()</PRE>
+
+
+<UL>
+   Create a new GameDraw object.
+</UL>
+
+
+
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>Author:</B> Andrew Huynh  <BR/>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="hasCollision"><!-- --></A>
+   <H3>hasCollision</H3>
+   <PRE>Object <B>hasCollision</B>(&lt;int&gt; cx, &lt;int&gt; cy)</PRE>
+   
+      <UL>Determines whether or not a collision occurs at [cx,cy].</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>cx</CODE> -  Map X coordinate.  
+      </UL> 
+   
+     <UL><CODE>cy</CODE> -  Map Y coordinate.
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="Initialize"><!-- --></A>
+   <H3>Initialize</H3>
+   <PRE>void <B>Initialize</B>()</PRE>
+   
+      <UL>Initialize GUI classes, prepares for 'rendering'.
+ Creates new objects of, and initializes <a href="Tooltip.html#">Tooltip</a>, <a href="ContextMenu.html#">ContextMenu</a>,
+ <a href="HUD.html#">HUD</a>, and <a href="Pack.html#">Pack</a></UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="loadMap"><!-- --></A>
+   <H3>loadMap</H3>
+   <PRE>void <B>loadMap</B>(&lt;<a href="String.html">String</a>&gt; map)</PRE>
+   
+      <UL>Takes the file name of the top-left corner map and proceeds to
+ load every other section of the map depending from information 
+ gathered from the first map. Every map has data about the maps
+ to the top, right, bottom, and left of it, and thus this function
+ utilizes that information, to easily load the entire map using only
+ the name of one.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>map</CODE> -  Map to load.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="scrollMap"><!-- --></A>
+   <H3>scrollMap</H3>
+   <PRE>void <B>scrollMap</B>(&lt;int&gt; cx, cy)</PRE>
+   
+      <UL>Centers map on [cx, cy]. Remember that [cx] and [cy] are
+ <b><u>Global</u></b> coordinates(0-60), not local ones(0-20).</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>cx</CODE> -  Map X Coordinate.  
+      </UL> 
+   
+     <UL><CODE>int</CODE> - { cy Map Y Coordinate.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setStatus"><!-- --></A>
+   <H3>setStatus</H3>
+   <PRE>void <B>setStatus</B>(&lt;<a href="String.html">String</a>&gt; msg)</PRE>
+   
+      <UL>Sets the status msg to [msg]. Hides when [msg] is null.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>msg</CODE> -  Status text to display.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameDraw.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="EventHandler.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="GameEngine.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+&copy Copyright 2007. CSES
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Feb  9 13:00:52 2007</div>
+</BODY>
+</HTML>

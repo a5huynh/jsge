@@ -1,0 +1,81 @@
+<html>
+<head>
+	<link rel="stylesheet" href="dbmStyle.css" type="text/css" />
+	<!-- <script type="text/javascript" src="shop.js"></script> -->
+	<script type='text/javascript'>
+	function init()
+	{
+		document.onkeyup = keyUp;
+	}
+
+	function edit(obj)
+	{
+		if(document.getElementById('input') == null)
+		{
+			var val = obj.innerHTML;
+			var textField = "<input id='input' type='text' value='"+val+"' class='columnInput'>";
+			obj.innerHTML = textField;
+			obj.setAttribute('onclick', '');
+			document.getElementById('input').focus();
+		}
+	}
+
+	function keyUp(event)
+	{
+		if(!event) event = window.event;
+
+		var button = event.which;
+
+		if(button == 13)
+		{
+			var input = document.getElementById('input');
+			if(input)
+			{
+				var parent = input.parentNode;
+				parent.innerHTML = input.value;
+				parent.setAttribute('onclick', 'input(this)');
+			}
+		}
+	}
+	</script>
+</head>
+<body onload='init()'>
+<div class='sidebar'></div>
+<div class='panelHolder'>
+
+<table class='dataTable'>
+<tr>
+<td width='25%' class='column'>Oink</td>
+<td width='25%' class='column'>Oink</td>
+<td width='25%' class='column'>Oink</td>
+<td width='25%' class='column'>Oink</td>
+</tr>
+<tr class='columnData' onmouseover='this.style.backgroundColor = "#DDF"' onmouseout='this.style.backgroundColor = "#FFF"'>
+<td onclick='edit(this)'>Oink</td>
+<td onclick='edit(this)'>Oink</td>
+<td onclick='edit(this)'>Oink</td>
+<td onclick='edit(this)'>Oink</td>
+</tr>
+<tr class='columnData' style='background-color: #EEE' onmouseover='this.style.backgroundColor = "#DDF"' onmouseout='this.style.backgroundColor = "#EEE"'>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+</tr>
+<tr class='columnData' onmouseover='this.style.backgroundColor = "#DDF"' onmouseout='this.style.backgroundColor = "#FFF"'>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+</tr>
+<tr class='columnData' style='background-color: #EEE' onmouseover='this.style.backgroundColor = "#DDF"' onmouseout='this.style.backgroundColor = "#EEE"'>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+<td>Oink</td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>

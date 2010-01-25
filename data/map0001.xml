@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<map top="map0001" left="map0001" bottom="map0001" right="map0001">
+    <terrain>
+        <row>11111111111211111111</row>
+        <row>21111111111111121111</row>
+        <row>11111112111111111111</row>
+        <row>11211111111111111111</row>
+        <row>11111111111111112111</row>
+        <row>11111111111211111111</row>
+        <row>11111111111111111111</row>
+        <row>11111111211111111111</row>
+        <row>12111111111111211111</row>
+        <row>11111211111111111121</row>
+        <row>11111111111111111111</row>
+        <row>11121111112111111111</row>
+        <row>11111111111112111111</row>
+        <row>11111111111111111111</row>
+        <row>11111211111111111111</row>
+        <row>11111111111112111111</row>
+        <row>11111111111111111111</row>
+        <row>11211111111111111121</row>
+        <row>11111111112111111111</row>
+        <row>11112111111111111111</row>
+    </terrain>
+    <layer type='2'>
+        <obj id='5' x='0' y='0' width='24' height='24' />
+        <obj id='5' x='1' y='0' width='24' height='24' />
+        <obj id='5' x='0' y='1' width='24' height='24' />
+        <obj id='5' x='2' y='0' width='24' height='24' />
+        <obj id='5' x='0' y='2' width='24' height='24' />
+        <obj id='8' objid='1' x='9' y='8' width='24' height='24' />
+        <obj id='17' objid='1' x='8' y='8' width='24' height='24' frames='3' />
+        <obj id='5' x='19' y='17' width='24' height='24' />
+        <obj id='5' x='19' y='18' width='24' height='24' />
+        <obj id='5' x='17' y='19' width='24' height='24' />
+        <obj id='5' x='18' y='19' width='24' height='24' />
+        <obj id='5' x='19' y='19' width='24' height='24' />
+    </layer>
+</map>
+

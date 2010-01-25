@@ -1,0 +1,31 @@
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    border: 0;
+}
+
+/* Terrain Sprites */
+.sprite { z-index: 1; position: absolute; width: 24px; height: 24px; }
+.sp1  { background-image: url('../images/terrain/grass.png');  }
+.sp2  { background-image: url('../images/terrain/grass2.png'); }
+.sp5  { z-index: 2; background-image: url('../images/objects/block.png');  }
+.sp8  { z-index: 2; background-image: url('../images/objects/sign.png');   }
+.sp17 { z-index: 2; position: absolute; width: 92px; height: 24px; background-image: url('../images/objects/torch.png');  }
+
+/* Player/npc sprites */
+#userScroll { z-index: 5; position: absolute; overflow: hidden; }
+.player1{ background-image: url(../images/player1.png); width: 192px; height: 36px; }
+.player2{ background-image: url(../images/player2.png); width: 192px; height: 36px; }
+.player3{ background-image: url(../images/player3.png); width: 192px; height: 36px; }
+.player4{ background-image: url(../images/player4.png); width: 192px; height: 36px; }        
+.npc1{ background-image: url(../images/joel.png); width: 48px; height: 26px; }
+
+/* Item sprites */
+.packspot { height: 32px; width: 32px; margin: 10px; float: left; }
+.empty{ width: 24px; height: 24px; }
+.item0{ background-image: url(../images/book.png); width: 24px; height: 24px; }
+

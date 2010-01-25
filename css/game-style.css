@@ -1,0 +1,159 @@
+BODY {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma, Arial;
+    font-size: 10pt;
+}
+
+#scroll {
+    position: relative;    
+    margin: 0 auto; 
+    overflow: hidden;
+    width: 600px; 
+    height: 600px; 
+    border: 1px solid #AAA;   
+}
+
+.status {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #000;
+    background: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 2px;
+}
+
+.console {
+    z-index: 100;
+    margin: 0 auto;
+    width: 600px;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #aaa;
+    overflow: auto;
+    height: 104px;
+    font-size: 9pt;
+    cursor: default;
+}
+
+.consoleInput {
+    z-index: 100;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aaa;
+    overflow: auto;
+    width: 454px;
+    height: 20px;
+    font-size: 9pt;
+}
+
+.cInputDiv {
+    z-index: 101;
+    padding: 2px;
+    color: #FFF;
+    position: absolute;
+    top: 570px;
+    left: 4px;
+    width: 400px;
+    height: 60px;
+    visibility: hidden;
+}
+
+.cSystem{ color: #0F0; }
+.cRed{ color: #F00; }
+
+.pack {
+    border: 1px solid #000; 
+    z-index: 100; 
+    width: 220px; 
+    height: 264px; 
+    margin: 0 auto;
+}
+
+.ttip {
+    z-index: 101; 
+    position: absolute;
+    padding: 5px; 
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    background-color: #DDF;
+    display: none;
+    font-size: 8pt;
+}
+
+.ttHeader{ font-weight: bold;   }
+.ttInfo{    color: #548912;	}
+
+.ctxtDivider {
+    width: 100%; 
+    height: 1px; 
+    padding: 0px; 
+    margin: 0px; 
+    background-color: #000;
+}
+
+.ctxtMenu {
+    z-index: 100; 
+    position: absolute;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    background-color: #DDF;
+    display: none;
+    font-size: 8pt;
+}
+
+.ctxtHeader {
+    width: 100%;
+    height: 100%;
+    padding: 2px 5px 2px 5px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.ctxtOption {
+    color: #548912;
+    background-color: #DDF;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+}
+
+.hudStatus {
+    z-index: 100;
+    position: absolute;
+    top: 435px;
+    left: 10px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #FFF;
+    background: #F00;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    display: none;
+}
+
+.npcChat {
+    z-index: 101;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 120px; 
+    width: 450px; 
+    border: 1px solid #CCC;
+    display: none;
+}
+
+.npcChat TABLE {
+    padding: 0px;
+    font-size: 10pt;
+    font-family: Tahoma;
+    height: 120px;
+    width: 450px;
+}

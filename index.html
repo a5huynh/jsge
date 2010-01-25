@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	    <title>JSGE: A Javascript Game Engine geared towards RPGs</title>
+	    
+        <link rel='stylesheet' href='css/game-style.css' type='text/css'>
+        <link rel='stylesheet' href='css/game-sprites.css' type='text/css'>
+        
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+        
+        <script type='text/javascript' src='js/config.js'></script>
+        <script type='text/javascript' src='js/helper.js'></script>
+        <script type='text/javascript' src='js/events.js'></script>
+        
+        <!-- game objects -->
+        <script type='text/javascript' src='js/objs/npc.js'></script>
+        <script type='text/javascript' src='js/objs/player.js'></script>        
+        
+        <!-- ui elements -->
+        <script type='text/javascript' src='js/core/game-draw.js'></script>
+        <script type='text/javascript' src='js/ui/hud.js'></script>
+        <script type='text/javascript' src='js/ui/console.js'></script>        
+        <script type='text/javascript' src='js/ui/tooltip.js'></script>
+        <script type='text/javascript' src='js/ui/pack.js'></script>
+        <script type='text/javascript' src='js/ui/context-menu.js'></script>
+        
+        <!-- engine elements -->
+        <script type='text/javascript' src='js/core/chat.js'></script>        
+        <script type='text/javascript' src='js/core/game-input.js'></script>        
+        <script type='text/javascript' src='js/core/script-engine.js'></script>
+        <script type='text/javascript' src='js/core/game-engine.js'></script>    
+
+        <!-- startup code -->
+        <script type='text/javascript' src='js/game-startup.js'></script>    
+    
+        <script type='text/javascript'>
+            $(function(){
+                
+                var mapDIV = $('#map');
+                var section_size = document.jsge.MAP_SIZE * document.jsge.SPRITE_SIZE;
+                
+                /* Generate map sections */
+                var sec_num = 1;
+                for(var y = 0; y < 3; y++) {
+                    for(var x = 0; x < 3; x++) {
+                        
+                        var div = document.createElement('DIV');
+                        div.id = 'map' + sec_num;
+                        div.style.position = 'absolute';
+                        div.style.top = (y*section_size) + 'px';
+                        div.style.left = (x*section_size) + 'px';
+                        div.style.width = section_size + 'px';
+                        div.style.height = section_size + 'px';
+                        mapDIV.append(div);
+                        
+                        sec_num++;
+                    }
+                }
+                
+                var packDIV = $('#packDND');
+                for(var i = 0; i < 30; i++) {
+                    packDIV.append("<div class='item0' id='packSpot"+i+"' style='height: 24px; width: 24px; margin: 10px; float: left;'></div>");
+                }
+                
+                loadMap(); 
+            });
+        </script>
+	</head>
+    <body>
+        <!-- Status -->
+        <div id='status' class='status'></div>
+        
+        <table style='padding: 0; margin: 0;' cellpadding=0 border=0 cellspacing=0>
+        <tr><td>
+            <!-- Game Map -->
+            <div id='scroll'>
+                <div id='players' style='position: absolute; z-index: 5;'></div>
+                <div id='map' style="position: absolute;"></div>
+            </div>
+                
+            <!-- Console/Chat Window -->
+            <div id="console" class="console"></div>
+            <div id="cInputDiv" class="cInputDiv">
+                <input type="text" id="consoleInput" class="consoleInput" maxlength="60" disabled>
+            </div>                    
+        </td><td style='border-left: 5px solid #000; width: 250px; vertical-align: top; background: url("images/bg-paper.gif") repeat-y;'>
+            <!-- Player info -->
+            <div style='padding: 10px; width: 190px; margin-top: 20px; margin-bottom: 30px; margin-left: auto; margin-right: auto;'>
+                <div style='height: 20px; margin-bottom: 10px;'>
+                    <b>HP:</b>&nbsp;
+                    <div style='float: right; width: 150px; height: 20px; border: 1px solid #000;'>
+                        <div style='width: 150px; height: 20px; background-color: #860016; text-align: center; color: #FFF;'>
+                            10/10
+                        </div>
+                    </div>
+                </div>
+                <div style='clear: both; height: 20px;'>
+                    <b>MP:</b>&nbsp;
+                    <div style='float: right; width: 150px; height: 20px; border: 1px solid #000;'>
+                        <div style='width: 150px; height: 20px; background-color: #5095BE; text-align: center; color: #FFF;'>
+                            50/50
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- User Pack (Inventory) -->
+            <div id='packDND' class='pack'></div>
+        </td></tr></table>
+        
+        <!-- Tooltip -->
+        <div id='ttip' class='ttip'>
+            <div id='ttHeader' class='ttHeader'></div>
+            <div id='ttInfo' class='ttInfo'></div>
+    	</div>
+
+        <!-- Script Storage (Storage area for scripts.) -->
+        <div id='scriptStorage' style='display: none;'></div>
+
+        <!-- Context Menu -->
+    	<div id='ctxtMenu' class='ctxtMenu'>
+    		<div class='ctxtHeader'>Options</div>
+    		<div class='ctxtDivider'></div>
+    		<div id='ctxtOptions'></div>
+    	</div>        
+    </body>
+</html>

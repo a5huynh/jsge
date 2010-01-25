@@ -1,0 +1,1073 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Player
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
+</HEAD>
+<SCRIPT>
+function asd()
+{
+parent.document.title="Player";
+}
+</SCRIPT>
+<BODY BGCOLOR="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameObjs.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">&nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"--><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="Pack.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="ScriptEngine.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+<HR>
+
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>Class Player</H2>
+<PRE>Object
+   |
+   +--<b>Player</b>
+</PRE>
+
+
+<HR>
+<DL>
+   <!-- Class definition -->
+   <DT>class 
+   <B>Player</B>
+   
+
+</DL>
+   
+   <P>
+   <BR/>The Player object represents a player on the map, handling
+ movement and interaction.
+ <BR/><I>Defined in <a href='overview-summary-cseGameObjs.js.html'>cseGameObjs.js</a></I><BR/><BR/><B>Author:</B> Andrew Huynh  <BR/>
+   </P>
+   
+   <HR>
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<!-- ======== END NESTED CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+   <A NAME="field_summary"><!-- --></A>
+      <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+         <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+            <TD COLSPAN=2><FONT SIZE="+2">
+               <B>Field Summary</B></FONT></TD>
+         </TR>
+
+   <!-- This is one instance field summary -->
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{int}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#dir">dir</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current direction player is facing</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#frame">frame</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{int}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#globalX">globalX</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global X Coordinate</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{int}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#globalY">globalY</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global Y Coordinate</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{int}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#localX">localX</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local X Coordinate</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{int}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#localY">localY</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local Y Coordinate</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&nbsp;{String}</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#name">name</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player name</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#pObj">pObj</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+   <CODE>&lt;private&gt;&nbsp;&nbsp;Object</CODE></FONT></TD>
+   <TD><CODE><B><A HREF="#pScroll">pScroll</A></B></CODE>
+   <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+   </TR>
+   
+
+   </TABLE>
+   &nbsp;
+   
+
+   
+
+<!-- =========== END FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+   <TD>
+      <CODE>
+	 <B>
+	    <A HREF="#Player()">Player</A></B>(&lt;int&gt; gX, &lt;int&gt; gY, &lt;int&gt; lX, &lt;int&gt; lY)
+      </CODE>
+      <BR>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Create a new Player object
+      </TD>
+</TR>
+</TABLE>
+
+<!-- ======== END CONSTRUCTOR SUMMARY ======== -->
+
+&nbsp;
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#changeDirection">changeDirection</A></B>(&lt;int&gt; newDir)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Changes the direciton in which the player facing.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#direction">direction</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Returns the current direction of the player.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#doMove">doMove</A></B>(&lt;int&gt; dir, &lt;int&gt; cx, &lt;int&gt; cy, &lt;int&gt; nx, &lt;int&gt; ny)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Move the player's avatar.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getGlobalX">getGlobalX</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's global X coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getGlobalY">getGlobalY</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's global Y coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getLocalX">getLocalX</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's local X coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getLocalY">getLocalY</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's local Y coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getMapX">getMapX</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's map X coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;Object</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#getMapY">getMapY</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Get player's map Y coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#movePlayer">movePlayer</A></B>(&lt;int&gt; cx, &lt;int&gt; cy)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Move player to cx, cy.
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setGlobalX">setGlobalX</A></B>(i)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set player's global X coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setGlobalY">setGlobalY</A></B>(i)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set player's global Y coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setLocalX">setLocalX</A></B>(i)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set player's local X coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#setLocalY">setLocalY</A></B>(i)
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Set player's local Y coordinate
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#show">show</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Display player on map
+      </TD>
+   </TR>
+
+   <TR BGCOLOR="white" CLASS="TableRowColor">
+      <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+	 <FONT SIZE="-1">
+	    <CODE>&nbsp;void</CODE>
+	 </FONT>
+      </TD>
+      <TD>
+	 <CODE>
+	    <B>
+	       <A HREF="#updateFrame">updateFrame</A></B>()
+	 </CODE>
+	 <BR>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 Updates the frame of animation of the character.
+      </TD>
+   </TR>
+
+
+</TABLE>
+
+
+
+<P>
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+<!-- ============ FIELD DETAIL START =========== -->
+
+   <A NAME="field_detail"><!-- --></A>
+   <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+      <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+         <TD COLSPAN=1><FONT SIZE="+2"><B>Field Detail</B></FONT></TD>
+      </TR>
+   </TABLE>
+
+   
+   <A NAME="dir"><!-- --></A>
+   <H3>dir</H3>
+   <PRE>{int}&nbsp;<B>dir</B></PRE>
+   <UL>
+   Current direction player is facing
+   
+   </UL>
+   <HR>
+   
+   <A NAME="frame"><!-- --></A>
+   <H3>frame</H3>
+   <PRE>&lt;private&gt;&nbsp;Object&nbsp;<B>frame</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="globalX"><!-- --></A>
+   <H3>globalX</H3>
+   <PRE>{int}&nbsp;<B>globalX</B></PRE>
+   <UL>
+   Global X Coordinate
+   
+   </UL>
+   <HR>
+   
+   <A NAME="globalY"><!-- --></A>
+   <H3>globalY</H3>
+   <PRE>{int}&nbsp;<B>globalY</B></PRE>
+   <UL>
+   Global Y Coordinate
+   
+   </UL>
+   <HR>
+   
+   <A NAME="localX"><!-- --></A>
+   <H3>localX</H3>
+   <PRE>{int}&nbsp;<B>localX</B></PRE>
+   <UL>
+   Local X Coordinate
+   
+   </UL>
+   <HR>
+   
+   <A NAME="localY"><!-- --></A>
+   <H3>localY</H3>
+   <PRE>{int}&nbsp;<B>localY</B></PRE>
+   <UL>
+   Local Y Coordinate
+   
+   </UL>
+   <HR>
+   
+   <A NAME="name"><!-- --></A>
+   <H3>name</H3>
+   <PRE>{String}&nbsp;<B>name</B></PRE>
+   <UL>
+   Player name
+   
+   </UL>
+   <HR>
+   
+   <A NAME="pObj"><!-- --></A>
+   <H3>pObj</H3>
+   <PRE>&lt;private&gt;&nbsp;Object&nbsp;<B>pObj</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+   <A NAME="pScroll"><!-- --></A>
+   <H3>pScroll</H3>
+   <PRE>&lt;private&gt;&nbsp;Object&nbsp;<B>pScroll</B></PRE>
+   <UL>
+   
+   
+   </UL>
+   <HR>
+   
+
+
+<!-- ============ FIELD DETAIL END =========== -->
+
+    <!-- ========= CONSTRUCTOR DETAIL START ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1>
+      <FONT SIZE="+2"><B>Constructor Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<A NAME="Player()"><!-- --></A><H3>
+Player</H3>
+<PRE><B>Player</B>(&lt;int&gt; gX, &lt;int&gt; gY, &lt;int&gt; lX, &lt;int&gt; lY)</PRE>
+
+
+<UL>
+   Create a new Player object
+</UL>
+
+
+
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>gX</CODE> -  Global X coordinate  
+     </UL>
+   
+     <UL><CODE>gY</CODE> -  Global Y coordinate  
+     </UL>
+   
+     <UL><CODE>lX</CODE> -  Local X coordinate  
+     </UL>
+   
+     <UL><CODE>lY</CODE> -  Local Y coordinate
+     </UL>
+   
+   
+   </UL>
+
+
+<!-- Constructor return value(s) -->
+
+<!-- End constructor return value(s) -->
+
+<!-- ADDITIONAL ATTRIBUTES -->
+
+<UL>   
+<B>Author:</B> Andrew Huynh  <BR/>
+</UL>
+
+<HR/>
+<!-- END ADDITIONAL ATTRIBUTES  -->
+
+<!-- ========= CONSTRUCTOR DETAIL END ======== -->
+
+
+<!-- ============ METHOD DETAIL START ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+   <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+      <TD COLSPAN=1><FONT SIZE="+2">
+         <B>Method Detail</B></FONT>
+      </TD>
+   </TR>
+</TABLE>
+
+<!-- One single method detail entry -->
+
+   <A NAME="changeDirection"><!-- --></A>
+   <H3>changeDirection</H3>
+   <PRE>void <B>changeDirection</B>(&lt;int&gt; newDir)</PRE>
+   
+      <UL>Changes the direciton in which the player facing.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>newDir</CODE> -  New direction to face (1 = West, 2 = North, 3 = East, 4 = South)    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="direction"><!-- --></A>
+   <H3>direction</H3>
+   <PRE>Object <B>direction</B>()</PRE>
+   
+      <UL>Returns the current direction of the player.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="doMove"><!-- --></A>
+   <H3>doMove</H3>
+   <PRE>void <B>doMove</B>(&lt;int&gt; dir, &lt;int&gt; cx, &lt;int&gt; cy, &lt;int&gt; nx, &lt;int&gt; ny)</PRE>
+   
+      <UL>Move the player's avatar.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>dir</CODE> -  Direction of movement  
+      </UL> 
+   
+     <UL><CODE>cx</CODE> -  Old X position of character.  
+      </UL> 
+   
+     <UL><CODE>cy</CODE> -  Old Y position of character.  
+      </UL> 
+   
+     <UL><CODE>nx</CODE> -  New X position of character.  
+      </UL> 
+   
+     <UL><CODE>ny</CODE> -  New Y position of character.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getGlobalX"><!-- --></A>
+   <H3>getGlobalX</H3>
+   <PRE>Object <B>getGlobalX</B>()</PRE>
+   
+      <UL>Get player's global X coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getGlobalY"><!-- --></A>
+   <H3>getGlobalY</H3>
+   <PRE>Object <B>getGlobalY</B>()</PRE>
+   
+      <UL>Get player's global Y coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getLocalX"><!-- --></A>
+   <H3>getLocalX</H3>
+   <PRE>Object <B>getLocalX</B>()</PRE>
+   
+      <UL>Get player's local X coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getLocalY"><!-- --></A>
+   <H3>getLocalY</H3>
+   <PRE>Object <B>getLocalY</B>()</PRE>
+   
+      <UL>Get player's local Y coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getMapX"><!-- --></A>
+   <H3>getMapX</H3>
+   <PRE>Object <B>getMapX</B>()</PRE>
+   
+      <UL>Get player's map X coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="getMapY"><!-- --></A>
+   <H3>getMapY</H3>
+   <PRE>Object <B>getMapY</B>()</PRE>
+   
+      <UL>Get player's map Y coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="movePlayer"><!-- --></A>
+   <H3>movePlayer</H3>
+   <PRE>void <B>movePlayer</B>(&lt;int&gt; cx, &lt;int&gt; cy)</PRE>
+   
+      <UL>Move player to cx, cy. (This is instant no animation done here.)</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <UL>
+   <B>Parameters:</B>
+   
+     <UL><CODE>cx</CODE> -  X position to move to.  
+      </UL> 
+   
+     <UL><CODE>cy</CODE> -  Y position to move to.    
+      </UL> 
+   
+   </UL>
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setGlobalX"><!-- --></A>
+   <H3>setGlobalX</H3>
+   <PRE>void <B>setGlobalX</B>(i)</PRE>
+   
+      <UL>Set player's global X coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setGlobalY"><!-- --></A>
+   <H3>setGlobalY</H3>
+   <PRE>void <B>setGlobalY</B>(i)</PRE>
+   
+      <UL>Set player's global Y coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setLocalX"><!-- --></A>
+   <H3>setLocalX</H3>
+   <PRE>void <B>setLocalX</B>(i)</PRE>
+   
+      <UL>Set player's local X coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="setLocalY"><!-- --></A>
+   <H3>setLocalY</H3>
+   <PRE>void <B>setLocalY</B>(i)</PRE>
+   
+      <UL>Set player's local Y coordinate</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="show"><!-- --></A>
+   <H3>show</H3>
+   <PRE>void <B>show</B>()</PRE>
+   
+      <UL>Display player on map</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+   <A NAME="updateFrame"><!-- --></A>
+   <H3>updateFrame</H3>
+   <PRE>void <B>updateFrame</B>()</PRE>
+   
+      <UL>Updates the frame of animation of the character.</UL>
+   
+
+   <!-- METHOD PARAMETERS START -->
+   
+   <!-- METHOD PARAMETERS END -->
+
+   
+
+   <!-- ADDITIONAL ATTRIBUTES START -->
+   
+   <!-- ADDITIONAL ATTRIBUTES  END -->
+<HR>
+
+
+
+<!-- ============ METHOD DETAIL END ========== -->
+
+<!-- ========= END OF CLASS DATA ========= -->
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">  <A HREF="overview-summary-cseGameObjs.js.html"><FONT CLASS="NavBarFont1"><B>File</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><b>Tree</b></FONT></A>&nbsp;</TD>
+  <!--TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"-->    <!--A HREF="deprecated-list.html"--><!--FONT CLASS="NavBarFont1">Deprecated</FONT--><!--/A--><!--&nbsp;</TD-->
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>CSEGame</B>
+</EM>
+</TD
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="Pack.html"><B>PREV CLASS</B></A><!-- 
+   NEXT CLASS 
+-->
+&nbsp;<A HREF="ScriptEngine.html"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;
+<SCRIPT>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>
+</NOSCRIPT>
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<FONT SIZE="-1">
+&copy Copyright 2007. CSES
+</FONT>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Fri Feb  9 13:00:52 2007</div>
+</BODY>
+</HTML>

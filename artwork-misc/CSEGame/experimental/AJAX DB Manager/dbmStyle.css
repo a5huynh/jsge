@@ -1,0 +1,55 @@
+.panelHolder
+{
+	position: absolute;
+	left: 230px;	
+	width: 500px;
+	height: 400px;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 1px;
+}
+
+.dataTable
+{
+	border-style: none;
+	width: 100%;
+}
+
+.sidebar
+{
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 1px;
+}
+
+.column
+{
+	padding: 2px;
+	text-align: center;
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+	background-color: #CCC;
+	cursor: default;
+}
+
+.columnInput
+{
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	font-family: Tahoma, Arial;
+	font-size: 8pt;
+	cursor: default;
+}
+
+.columnData
+{
+	padding: 2px;
+	text-align: center;
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+	cursor: default;
+}

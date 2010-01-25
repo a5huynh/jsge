@@ -1,0 +1,60 @@
+.panelHolder
+{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC;
+	background-color: #DDF;
+}
+
+.panelTitle
+{
+	margin: 5px;
+	height: 20px;
+	text-align: center;
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC;
+	background-color: #FFF;
+}
+
+.panelScroll
+{
+	margin: 5px;
+	height: 260px;
+	width: 390px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC;
+	background-color: #FFF;
+	overflow: auto;
+	
+}
+
+.panelStatus
+{
+	z-index: 100px;
+	position: absolute;
+	font-family: Tahoma, Arial;
+	font-size: 10pt;	
+}
+
+.panel
+{
+	font-family: Tahoma, Arial;
+	font-size: 10pt;
+	padding: 10px;
+}
+
+.panelButton
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000; 
+	text-align: center;
+	cursor: pointer;
+}

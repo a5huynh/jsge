@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- 
+List of Game Sprites
+-->
+<mapsprites>
+    <!-- Layer One -->
+    <layer type="1">
+        <sprite id="1" name="Grass00" type="Terrain" src="grass.png" width="24" height="24" />
+        <sprite id="2" name="Grass01" type="Terrain" src="grass2.png" width="24" height="24" />
+        <sprite id="3" name="Archway Shadow" type="Terrain" src="archwayShadow.png" width="24" height="24" />
+        <sprite id="4" name="Path" type="Terrain" src="path.png" width="24" height="24" />
+        <sprite id="9" name="Water01" type="Terrain" src="water.png" width="24" height="24" />
+    </layer>
+    <layer type="2">
+        <sprite id="5" name="Wood Block" type="Objects" src="block.png" width="24" height="24" />
+        <sprite id="6" name="Archway Block" type="Objects" src="block2.png" width="24" height="24" />
+        <sprite id="7" name="Chest" type="Objects" src="chest.png" width="24" height="24" />
+        <sprite id="8" name="Sign" type="Objects" src="sign.png" width="24" height="24" />
+        <sprite id="10" name="Water02" type="Terrain" src="waterEdgeL.png" width="24" height="24" />
+        <sprite id="11" name="Water03" type="Terrain" src="waterEdgeR.png" width="24" height="24" />
+        <sprite id="12" name="Water04" type="Terrain" src="waterCornerL.png" width="24" height="24" />
+        <sprite id="13" name="Water05" type="Terrain" src="waterCornerR.png" width="24" height="24" />
+        <sprite id="14" name="Water04" type="Terrain" src="waterCornerBL.png" width="24" height="24" />
+        <sprite id="15" name="Water06" type="Terrain" src="waterCornerBR.png" width="24" height="24" />        
+        <sprite id="17" name="torch" type="Objects" src="torch.png" width="72" height="24" />
+    </layer>
+    <layer type="6">
+        <sprite id="16" name="Archway" type="Objects" src="archway.png" width="120" height="36" />
+    </layer>
+</mapsprites>

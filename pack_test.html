@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	    <title>JSGE: A Javascript Game Engine geared towards RPGs</title>
+	    
+        <link rel='stylesheet' href='css/game-style.css' type='text/css'>
+        <link rel='stylesheet' href='css/game-sprites.css' type='text/css'>
+        
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js'></script>
+            
+        <script type='text/javascript' src='js/config.js'></script>
+        <script type='text/javascript' src='js/helper.js'></script>
+        <script type='text/javascript' src='js/events.js'></script>
+        
+        <!-- game objects -->
+        <script type='text/javascript' src='js/objs/npc.js'></script>
+        <script type='text/javascript' src='js/objs/player.js'></script>        
+        
+        <!-- ui elements -->
+        <script type='text/javascript' src='js/core/game-draw.js'></script>
+        <script type='text/javascript' src='js/ui/hud.js'></script>
+        <script type='text/javascript' src='js/ui/console.js'></script>        
+        <script type='text/javascript' src='js/ui/tooltip.js'></script>
+        <script type='text/javascript' src='js/ui/pack.js'></script>
+        <script type='text/javascript' src='js/ui/context-menu.js'></script>
+        
+        <!-- engine elements -->
+        <script type='text/javascript' src='js/core/chat.js'></script>        
+        <script type='text/javascript' src='js/core/game-input.js'></script>        
+        <script type='text/javascript' src='js/core/script-engine.js'></script>
+        <script type='text/javascript' src='js/core/game-engine.js'></script>    
+
+        <!-- startup code -->
+        <script type='text/javascript' src='js/game-startup.js'></script>    
+            
+        <script type='text/javascript'>
+            $(function(){
+                var packDIV = $('#packDND');
+                for(var i = 0; i < 30; i++) {
+                    packDIV.append("<div class='packspot' id='ps" + i + "'><div class='empty'></div></div>");
+                }
+                
+                addItem(0);
+                addItem(0);                
+            });
+            
+            function addItem(item) {
+                
+                var pack = $('#packDND');
+                var item = $('.empty', pack);
+                
+                if(item != null) {
+                    item.removeClass('empty').addClass('item' + item);                    
+                }                
+            }
+        </script>
+	</head>
+    <body>
+        <div id='packDND' class='pack'></div>
+        <div style='width: 250px; margin: 10px auto;'><button onclick='addItem(0);'>add item</button></div>
+    </body>
+</html>
